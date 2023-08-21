@@ -4,7 +4,26 @@
   </a>
 </p>
 
-<h1>A gatsby site with themes</h1>
+<h1>An attempt to recreate an error that is happening within a gatsby site and its themes</h1>
+
+I'm getting this troublesome error. Frustratingly, It's one of those errors that happens right at the end of the build process.
+
+It seems to be being caused by the **export const config** implemetation which I am using as to veryify stripe via webhooks
+
+```
+//  If const config Object literal is commented out, the build process succeeds
+export const config = {
+  bodyParser: {
+    raw: {
+      type: `*/*`,
+    },
+  },
+};
+
+export default function handler(req, res) {
+  res.status(200).json({ hello: `world` })
+}
+```
 
 ===================
 
