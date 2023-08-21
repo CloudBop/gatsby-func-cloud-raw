@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-theme-funcloudraw",
+  "private": true,
+  "version": "0.0.1",
+  "license": "0BSD",
+  "scripts": {
+    "dev": "yarn workspace example develop",
+    "dev:clean": "yarn workspace example dev:clean",
+    "dev:network": "yarn workspace example dev:network",
+    "dev:serve": "yarn workspace example dev:serve",
+    "dev:https": "yarn workspace example dev:https",
+    "dev:https:network": "yarn workspace example dev:https:network",
+    "dev:logpages": "yarn workspace example dev:logpages",
+    "dev:fixbug": "yarn workspace example dev:fixbug",
+    "build": "yarn workspace example build",
+    "build:clean": "yarn workspace example build:clean",
+    "build:clean:serve": "yarn workspace example build:clean:serve",
+    "clean": "yarn workspace example clean",
+    "serve": "yarn workspace example serve",
+    "test": "yarn workspace gatsby-theme-websume-2021 test"
+  },
+  "workspaces": [
+    "gatsby-theme-minimal",
+    "example"
+  ],
+  "dependencies": {}
+}

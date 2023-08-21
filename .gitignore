@@ -1,0 +1,7 @@
+.cache
+public
+node_modules
+.env.*
+.wordpress-cache
+
+.DS_Store

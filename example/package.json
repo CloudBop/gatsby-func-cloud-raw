@@ -1,0 +1,33 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "author": "cloudbop ",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build --verbose",
+    "build:clean": "npm run clean && npm run build",
+    "build:clean:serve": "npm run clean && npm run build && npm run serve",
+    "develop": "gatsby develop",
+    "dev:clean": "npm run clean && npm run develop",
+    "dev:network": "gatsby develop -H 0.0.0.0",
+    "dev:serve": "gatsby serve",
+    "dev:logpages": "gatsby develop --log-pages",
+    "dev:https": "gatsby develop --https",
+    "dev:https:network-willfail": "gatsby develop --https -H 0.0.0.0",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run dev",
+    "test": "jest",
+    "test:debug": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage=true",
+    "test:update": "jest --verbose --updateSnapshot"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "gatsby": "^5.11.0",
+    "gatsby-theme-minimal": "^1.0.0"
+  }
+}
